@@ -6,8 +6,8 @@ fornavn = open("fornavne.txt","r")
 fornavne = []
 
 for line in fornavn:
-	line_strip = line.strip()
-	line_split = line_strip.split()
+	line_split = line.splitlines()
+	#line_split = line_strip.split()
 	fornavne.append(line_split)
 
 fornavn.close()
@@ -25,8 +25,8 @@ efternavn = open("efternavne.txt","r")
 efternavne = []
 
 for line in efternavn:
-	line_strip = line.strip()
-	line_split = line_strip.split()
+	line_split = line.splitlines()
+	#line_split = line_strip.split()
 	efternavne.append(line_split)
 
 efternavn.close()
